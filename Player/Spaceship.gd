@@ -12,7 +12,6 @@ func _enter_tree():
 	GameManager.define_player(self)
 
 func new_target(t):
-	print(t)
 	target = t
 
 func _physics_process(delta):
@@ -30,6 +29,7 @@ func _physics_process(delta):
 func _input(event):
 	if Input.is_mouse_button_pressed(1) and can_shoot:
 		print("shooting")
+		$AudioStreamPlayer.play()
 		can_shoot = false
 		$Timer.start()
 		var b = Bullet.instance()

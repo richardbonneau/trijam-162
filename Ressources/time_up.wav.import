@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/time_up.wav-94d971b6fe8af0c4d11465312b7dc755.sample"
+
+[deps]
+
+source_file="res://Ressources/time_up.wav"
+dest_files=[ "res://.import/time_up.wav-94d971b6fe8af0c4d11465312b7dc755.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

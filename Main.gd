@@ -1,16 +1,16 @@
 extends Node
 
+var game = preload("res://Level/Game.tscn")
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var current_game
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	GameManager.define_main(self)
+	restart()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func restart():
+	if current_game:
+		current_game.queue_free()
+	current_game = game.instance()
+	add_child(current_game)
